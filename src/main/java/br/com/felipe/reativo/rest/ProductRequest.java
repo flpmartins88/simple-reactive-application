@@ -4,18 +4,19 @@ import br.com.felipe.reativo.domain.Product;
 
 public class ProductRequest {
 
-    private String code;
     private String brand;
     private String description;
     private String color;
     private long price;
 
-    public String getCode() {
-        return code;
+    public ProductRequest() {
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public ProductRequest(String brand, String description, String color, long price) {
+        this.brand = brand;
+        this.description = description;
+        this.color = color;
+        this.price = price;
     }
 
     public String getBrand() {
